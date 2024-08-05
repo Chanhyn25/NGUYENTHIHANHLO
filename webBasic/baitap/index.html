@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Layout</title>
+    <style>
+        #A1 {
+            width: 1000px;
+            height: 2000px;
+            background-color: lightblue;
+            border: 1px solid black;
+            position: relative;
+            /* Để các phần tử con căn cứ vào A1 */
+
+        }
+
+        #A2 {
+            width: 500px;
+            height: 50px;
+            background-color: lightcoral;
+            border: 1px solid black;
+            /* Viền để dễ phân biệt */
+            position: fixed;
+            /* Cố định vị trí */
+            top: 0;
+            /* Luôn ở trên cùng */
+            left: 250;
+            /* Căn trái */
+            z-index: 1000;
+            /* Đảm bảo nằm trên các phần tử khác */
+        }
+
+        #A3 {
+            width: 500px;
+            height: 50px;
+            /* Chiều cao của phần tử A3 */
+            background-color: lightgreen;
+            /* Màu nền để dễ nhìn thấy */
+            border: 1px solid black;
+            /* Viền để dễ phân biệt */
+            position: fixed;
+            /* Cố định vị trí */
+            bottom: 0;
+            /* Luôn ở dưới cùng */
+            left: 250;
+            /* Căn trái */
+            z-index: 1000;
+            /* Đảm bảo nằm trên các phần tử khác */
+        }
+
+        #A4 {
+            width: 70%;
+            height: 500px;
+            /* Chiều cao của phần tử A4 */
+            background-color: lightyellow;
+            /* Màu nền để dễ nhìn thấy */
+            border: 1px solid black;
+            /* Viền để dễ phân biệt */
+            position: relative;
+            /* Theo vị trí tự nhiên trong A1 */
+            margin-top: 50px;
+            /* Để nằm dưới A2 */
+            overflow: auto;
+            /* Cho phép cuộn A4 */
+        }
+
+        #A5 {
+            width: 300px;
+            /* Chiều rộng của phần tử A5 */
+            height: 200px;
+            /* Chiều cao của phần tử A5 */
+            background-color: lightgreen;
+            /* Màu nền để dễ nhìn thấy */
+            border: 1px solid black;
+            /* Viền để dễ phân biệt */
+            position: absolute;
+            /* Định vị tương đối so với A4 */
+            left: 200px;
+            /* Cách trái A4 200px */
+            top: 50%;
+            /* 50% từ trên xuống trong A4 */
+            transform: translateY(-50%);
+            /* Để căn giữa theo trục Y */
+        }
+
+        #A6 {
+            width: 50px;
+            /* Chiều rộng của phần tử A6 */
+            height: 50px;
+            /* Chiều cao của phần tử A6 */
+            background-color: lightpink;
+            /* Màu nền để dễ nhìn thấy */
+            border: 1px solid black;
+            /* Viền để dễ phân biệt */
+            position: absolute;
+            /* Định vị tương đối so với A4 */
+            top: 50%;
+            /* 50% từ trên xuống trong A4 */
+            left: calc(50% - 25px);
+            /* Để A6 căn giữa theo chiều ngang */
+            transform: translateY(-100%);
+            /* Để A6 nằm trên A5 */
+            z-index: 1010;
+            /* Đảm bảo nằm trên A5 */
+        }
+
+        @media screen and (max-width: 780px) {
+            #A1 {
+                width: 500px;
+            }
+
+            #A2,
+            #A3 {
+                width: 500px;
+            }
+
+            #A4 {
+                width: 500px;
+            }
+
+            #A5 {
+                width: 50px;
+                height: 50px;
+                left: 100px;
+                /* Cách trái A4 100px khi thu nhỏ */
+            }
+
+            #A6 {
+                width: 25px;
+                height: 25px;
+                left: calc(50% - 12.5px);
+                /* Căn giữa theo chiều ngang khi thu nhỏ */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="A1">
+        <div id="A4">
+            <div id="A5">This is A5</div>
+            <div id="A6">This is A6</div>
+        </div>
+        This is A1 content.
+        <div id="A2">This is A2, always on top</div>
+        <div id="A3">This is A3, always on bottom</div>
+    </div>
+
+</body>
+
+</html>

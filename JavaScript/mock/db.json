@@ -1,0 +1,38 @@
+{
+  "orders": [
+    {
+      "id": "ID_0",
+      "hoTen": "Hạnh Nguyễn Thị",
+      "email": "nhi@gmail.com",
+      "sdt": "1111111111",
+      "diaChiNhanHang": "ddd, Xã Lý Bôn, Huyện Bảo Lâm, Tỉnh Cao Bằng",
+      "ghiChu": "fc scsvc",
+      "ngayMuaHang": "2024-07-24",
+      "order": [
+        {
+          "idSP": 1,
+          "soLuong": 1
+        },
+        {
+          "idSP": 2,
+          "soLuong": 1
+        }
+      ]
+    },
+    {
+      "id": "ID_0",
+      "hoTen": "Nguyễn Nhi",
+      "email": "nyn25104@gmail.com",
+      "sdt": "1111111111",
+      "diaChiNhanHang": "nhà số 10, biển 25, Xã Phương Đình, Huyện Đan Phượng, Thành phố Hà Nội",
+      "ghiChu": "nscnkcnsklacnksalnjs",
+      "ngayMuaHang": "2024-07-24",
+      "order": [
+        {
+          "idSP": 2,
+          "soLuong": 1
+        }
+      ]
+    }
+  ]
+}

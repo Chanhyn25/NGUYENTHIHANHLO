@@ -1,0 +1,231 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 12px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.container-text h3 {
+  font-size: 30px;
+}
+.container-text p {
+  color: rgb(253, 137, 75);
+}
+.container-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.column-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  margin-bottom: 40px;
+}
+
+.column-icon ion-icon {
+  font-size: 24px;
+  color: #5f5d5d;
+}
+
+.column-icon p {
+  margin: 0;
+  font-size: 16px;
+  color: #5f5d5d;
+}
+.form-group input {
+  width: 50%;
+  height: 40px;
+  color: #a69e9e;
+  padding-left: 10px; /* Padding to create space from the left */
+  box-shadow: 0 4px 6px rgb(225, 222, 222); /* Box shadow for shadow effect */
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form-group textarea {
+  width: 50%;
+  height: 120px;
+  color: #a69e9e;
+  padding-left: 10px; /* Padding to create space from the left */
+  box-shadow: 0 4px 6px rgb(225, 222, 222); /* Box shadow for shadow effect */
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form-group input::placeholder,
+.input-subject input::placeholder {
+  color: #a69e9e;
+}
+.column2 button {
+  width: 20%;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 2px;
+  border: 2px solid rgb(32, 160, 151);
+  background-color: rgb(32, 160, 151);
+  color: #fff;
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+.container-text h3 {
+  font-size: 30px;
+}
+.container-text p {
+  color: rgb(253, 137, 75);
+}
+.container-item {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+.column-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width:80%;
+  margin-bottom: 40px;
+}
+
+.column-icon ion-icon {
+  font-size: 24px;
+  color: #5f5d5d;
+}
+
+.column-icon p {
+  margin: 0;
+  font-size: 16px;
+  color: #5f5d5d;
+}
+.form-group input {
+  width: 90%;
+  height: 40px;
+  color: #a69e9e;
+  padding-left: 10px; /* Padding to create space from the left */
+  box-shadow: 0 4px 6px rgb(225, 222, 222); /* Box shadow for shadow effect */
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.form-group textarea {
+  width: 90%;
+  height: 120px;
+  color: #a69e9e;
+  padding-left: 10px; /* Padding to create space from the left */
+  box-shadow: 0 4px 6px rgb(225, 222, 222); /* Box shadow for shadow effect */
+  font-size: 16px;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.form-group input::placeholder,
+.input-subject input::placeholder {
+  color: #a69e9e;
+}
+.column2 button {
+  width: 50%;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 2px solid rgb(32, 160, 151);
+  background-color: rgb(32, 160, 151);
+  color: #fff;
+}
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+  .container-text h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .container-text p {
+    color: rgb(253, 137, 75);
+  }
+  .container-item {
+    display: flex;
+  justify-content: space-around;
+  }
+  .column-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  
+  .column-icon ion-icon {
+    font-size: 20px;
+    color: #5f5d5d;
+  }
+  
+  .column-icon p {
+    margin: 0;
+    width: 100%;
+    font-size: 12px;
+    color: #5f5d5d;
+  }
+  .form-group input {
+    width: 90%;
+    height: 40px;
+    color: #a69e9e;
+    padding-left: 10px; /* Padding to create space from the left */
+    box-shadow: 0 4px 6px rgb(225, 222, 222); /* Box shadow for shadow effect */
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .form-group textarea {
+    width: 90%;
+    height: 120px;
+    color: #a69e9e;
+    padding-left: 10px; /* Padding to create space from the left */
+    box-shadow: 0 4px 6px rgb(225, 222, 222); /* Box shadow for shadow effect */
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .form-group input::placeholder,
+  .input-subject input::placeholder {
+    color: #a69e9e;
+  }
+  .column1  h3{
+    font-size: 15px;
+  }
+  .column2  h3{
+    font-size: 15px;
+  } 
+  .column2 button {
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgb(32, 160, 151);
+    background-color: rgb(32, 160, 151);
+    color: #fff;
+  }
+}

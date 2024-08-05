@@ -1,0 +1,135 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container,
+.item-conten {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-conten {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20%;
+  margin-top: 10px;
+}
+.item-text h2 {
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: rgb(245, 210, 82);
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.row img {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+.row p {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(99, 99, 99);
+  width: 70%;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .item-conten {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10%;
+    margin-top: 10px;
+  }
+  .item-text h2 {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(245, 210, 82);
+    font-weight: bold;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .row img {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .row p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+    width: calc(
+      80%
+    ); /* Width adjustment for text to align with image */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .item-conten {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5%;
+  }
+  .item-text h2 {
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(245, 210, 82);
+    font-weight: bold;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .row img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .row p {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(99, 99, 99);
+    width: calc(
+      90%
+    ); /* Width adjustment for text to align with image */
+  }
+}

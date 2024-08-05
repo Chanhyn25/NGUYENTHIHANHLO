@@ -1,0 +1,212 @@
+.body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+.item {
+  width: 50%;
+  height: auto;
+  display: flex;
+  /* margin-left: 400px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbd9d9;
+}
+
+.iconicon {
+  display: inline-block;
+  width: 50px;
+  margin-top: 40px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #0dcdca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+.iconicon ion-icon {
+  color: #0dcdca;
+}
+.text {
+  text-align: center;
+}
+.text h3 {
+  font-weight: bold;
+  font-size: 50px;
+  margin: 10px 0 10px 0
+}
+.text p {
+  font-size: 20px;
+  color: rgb(100, 95, 95);
+}
+.lablea{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lablea input {
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.lablea button {
+  width: 50%;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+  background-color: #0dcdca;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #0dcdca;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px){
+  
+.item {
+  width: 50%;
+  height: auto;
+  display: flex;
+  /* margin-left: 400px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbd9d9;
+}
+
+.iconicon {
+  display: inline-block;
+  width: 50px;
+  margin-top: 40px;
+  height: 50px;
+  border-radius: 50px;
+  border: 2px solid #0dcdca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+.iconicon ion-icon {
+  color: #0dcdca;
+}
+.text {
+  text-align: center;
+}
+.text h3 {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0 10px 0
+}
+.text p {
+  font-size: 20px;
+  color: rgb(100, 95, 95);
+}
+.lablea{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lablea input {
+  height: 35px;
+  width: 100%;
+  padding-left: 10px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.lablea button {
+  width: 50%;
+  height: 40px;
+  margin-top: 15px;
+  margin-bottom: 80px;
+  background-color: #0dcdca;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #0dcdca;
+  border-radius: 5px;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+  .item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* margin-left: 400px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbd9d9;
+  }
+  
+  .iconicon {
+    display: inline-block;
+    width: 50px;
+    margin-top: 40px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #0dcdca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+  .iconicon ion-icon {
+    color: #0dcdca;
+  }
+  .text {
+    text-align: center;
+  }
+  .text h3 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10px 0 10px 0
+  }
+  .text p {
+    font-size: 12px;
+    color: rgb(100, 95, 95);
+  }
+  .lablea{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lablea input {
+    height: 25px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .lablea button {
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    background-color: #0dcdca;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #0dcdca;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  }

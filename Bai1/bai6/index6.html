@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="css6.css">
+</head>
+
+<body>
+    <button class="LoginButton">Đăng nhập hệ thống</button>
+
+    <div class="containerLogin">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Đăng nhập</h2>
+            <form id="loginForm">
+                <div>
+                    <label for="username">Tên đăng nhập:</label>
+                    <input type="text" id="username" name="username">
+                    <p id="usernameError" class="error-message"></p>
+                </div>
+                <div>
+                    <label for="password">Mật khẩu:</label>
+                    <input type="password" id="password" name="password">
+                    <p id="passwordError" class="error-message"></p>
+                </div>
+                <button type="submit" id="loginSubmit">Đăng nhập</button>
+                <p id="loginError" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

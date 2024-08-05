@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        li:nth-child(odd) {
+            background-color: red;
+        }
+
+        li:nth-child(even) {
+            background-color: blue;
+        }
+
+        @media(min-width:320px) {
+            li:nth-child(odd) {
+                width: 20px;
+            }
+
+            li:nth-child(even) {
+                width: 30px;
+            }
+        }
+
+        @media(min-width:425px) {
+            li:nth-child(odd) {
+                background-color: yellow;
+                width: 20px;
+            }
+
+            li:nth-child(even) {
+                background-color: red;
+                width: 50px;
+            }
+        }
+
+        @media(min-width:768px) {
+            li:nth-child(odd) {
+                background-color: brown;
+                width: 30px;
+            }
+
+            li:nth-child(even) {
+                background-color: yellow;
+                width: 40px;
+            }
+        }
+
+        @media(min-width:992px) {
+            li:nth-child(odd) {
+                background-color: yellow;
+                width: 30px;
+            }
+
+            li:nth-child(even) {
+                background-color: purple;
+                width: 40px;
+            }
+        }
+
+        @media(min-width:1200px) {
+            li:nth-child(odd) {
+                background-color: purple;
+                width: 50px;
+            }
+
+            li:nth-child(even) {
+                background-color: pink;
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>A1</li>
+        <li>A2</li>
+        <li>A3</li>
+        <li>A4</li>
+        <li>A5</li>
+        <li>A6</li>
+        <li>A7</li>
+        <li>A8</li>
+        <li>A9</li>
+        <li>A10</li>
+        <li>A11</li>
+        <li>A12</li>
+    </ul>
+</body>
+
+</html>
