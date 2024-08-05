@@ -1,0 +1,1 @@
+utils.saveToLocalStorage(keyLocalStorageListSP, listData);
